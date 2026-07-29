@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Budget Transactions</title>
+</head>
+<body>
+    <h1>Budget Transactions</h1>
+
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Date</th>
+            <th>Merchant</th>
+            <th>Amount</th>
+            <th>Transaction Type</th>
+        </tr>
+
+        {% for transaction in transactions %}
+        <tr>
+            <td>{{ transaction.id }}</td>
+            <td>{{ transaction.date }}</td>
+            <td>{{ transaction.merchant }}</td>
+            <td>{{ transaction.amount }}</td>
+            <td>{{ transaction.transaction_type }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
