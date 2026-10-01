@@ -17,6 +17,12 @@ class Transaction(SQLModel, table=True):
         index=True,
     )
 
+    owner_user_id: uuid.UUID | None = Field(
+    default=None,
+    foreign_key="users.id",
+    index=True,
+    )
+
     date: str
     merchant: str
     amount: float

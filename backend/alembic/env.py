@@ -4,7 +4,7 @@ from alembic import context
 from sqlmodel import SQLModel
 
 from database import engine
-from models import Transaction
+from models import Transaction, User 
 
 
 # Alembic configuration

@@ -56,7 +56,7 @@ USERS = [
     # },
 ]
 
-SQLModel.metadata.create_all(engine)
+#  SQLModel.metadata.create_all(engine)
 
 # =========================================================
 # EXISTING DATA MIGRATION
